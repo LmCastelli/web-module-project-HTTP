@@ -29,9 +29,7 @@ const App = (props) => {
   }, []);
 
   const deleteMovie = (id)=> {
-    setMovies({
-      movies: movies.filter(movie => movie.id !== id)
-    });
+    setMovies(movies.filter(movie => movie.id !== Number(id)));
     
   }
 
